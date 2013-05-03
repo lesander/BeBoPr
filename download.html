@@ -101,8 +101,8 @@
 		  <div class=marketing>
 			<h1>Download the awesome</h1>
 			<p class=marketing-byline>Download the sourcecode of the BeBoPr:</p>
-				<a class='btn btn-large btn-primary' data-loading-text="Downloading..." href='https://github.com/modmaker/BeBoPr/zipball/master' ><img alt='Download .zip' title='Download .zip' src=images/zip.png > Download</a>
-				<a class='btn btn-large btn-primary' data-loading-text="Downloading..." href='https://github.com/modmaker/BeBoPr/tarball/master' ><img alt='Download .tar.gz' title='Download .tar.gz' src=images/tar.png > Download</a>
+				<a id=downloadbutton_2 class='btn btn-large btn-primary' data-loading-text="Downloading..." href='https://github.com/modmaker/BeBoPr/zipball/master' ><img alt='Download .zip' title='Download .zip' src=images/zip.png > Download</a>
+				<a id=downloadbutton class='btn btn-large btn-primary' data-loading-text="Downloading..." href='https://github.com/modmaker/BeBoPr/tarball/master' ><img alt='Download .tar.gz' title='Download .tar.gz' src=images/tar.png > Download</a>
 		  </div>
         </div><!--/span-->
       </div><!--/row-->
@@ -117,6 +117,22 @@
     <!-- Placed at the end of the document so the pages load faster -->
 	<script src="javascripts/jquery-1.9.1.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#downloadbutton').button();
+
+			$('#downloadbutton').on('click', function () {
+				$(this).button('loading')
+			 }) 
+		});	
+		$(document).ready(function() {
+			$('#downloadbutton_2').button();
+
+			$('#downloadbutton_2').on('click', function () {
+				$(this).button('loading')
+			 }) 
+		});
+		</script>
 		<!-- Piwik -->
 		<script type="text/javascript"> 
 		  var _paq = _paq || [];
