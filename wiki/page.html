@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Download - BeBoPr</title>
+    <title>The BeBoPr!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="stylesheets/bootstrap-addons.css" rel="stylesheet" media="screen">
+	<link href="../stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../stylesheets/bootstrap-addons.css" rel="stylesheet" media="screen">
     <meta name="description" content="BeBoPr, Beaglebone, Cape, RepRap, Bas Laarhoven, AES, AESElectronics, Electronics">
     <meta name="author" content="Sander Laarhoven">
     <!-- Le styles -->
     <style type="text/css">
       body {
-	  		  background: url(img/highlight-bg.jpg) no-repeat center center fixed; 
+			  background: url(../img/highlight-bg.jpg) no-repeat center center fixed; 
 			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
@@ -35,11 +35,11 @@
     </style>
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
-                    <link rel="apple-touch-icon-precomposed" href="">
-                                   <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../">
+                    <link rel="apple-touch-icon-precomposed" href="../">
+                                   <link rel="shortcut icon" href="../">
   </head>
   <body>
     <div class="navbar navbar-fixed-top">
@@ -50,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="index.html?ref=404">BeBoPr</a>
+          <a class="brand" href="../">BeBoPr</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Fork this project on <a target=_blank href="https://github.com/modmaker/BeBoPr/fork" class="navbar-link">GitHub</a>!
@@ -67,20 +67,19 @@
         </div>
       </div>
     </div>
-	<br/>
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span2">		   
 		   <center>
-			<img style=width:232px; class='img-rounded img-polaroid' src='img/cape3.png' >
+			<img style=width:232px; class='img-rounded img-polaroid' src='../img/cape.jpg' >
            </center>
 		   <br/>
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">BeBoPr Website</li>
-			  <li><a href="index.html">&raquo; Home</a></li> 
-			  <li><a href="contact.html">&raquo; Contact</a></li> 
-			  <li class=active><a href="download.html">&raquo; Download</a></li> 
+			  <li class="nav-header">BeBoPr Website</li>
+			  <li><a href="../index.html">&raquo; Home</a></li> 
+			  <li><a href="../contact.html">&raquo; Contact</a></li> 
+			  <li><a href="../download.html">&raquo; Download</a></li> 
               <li class="nav-header">Wikipages on GitHub</li>
               <li><a target=_blank href="https://github.com/modmaker/BeBoPr/wiki/Home-of-the-BeBoPr">&raquo; Home of the BeBoPr</a></li>
               <li><a target=_blank href="https://github.com/modmaker/BeBoPr/wiki/The-BeBoPr-Cape">&raquo; The BeBoPr Cape</a></li>
@@ -94,45 +93,23 @@
 			  <li><a target=_blank href="https://github.com/modmaker/BeBoPr">&raquo; Github sourcecode</a></li>
               <li><a target=_blank href="http://beagleboard.org/">&raquo; Beaglebone</a></li>
               <li><a target=_blank href="http://www.youtube.com/AESElectronics/">&raquo; Youtube channel</a></li>
+
             </ul>
           </div><!--/.well -->
+
         </div><!--/span-->
-		<div class="span9">
-		  <div class=marketing>
-			<h1>Download BeBoPr</h1>
-			<p class=marketing-byline>Download the sourcecode of the BeBoPr:</p>
-				<a id=downloadbutton_2 class='btn btn-large btn-primary' data-loading-text="Downloading..." href='https://github.com/modmaker/BeBoPr/zipball/master' ><img alt='Download .zip' title='Download .zip' src=img/zip.png > Download</a>
-				<a id=downloadbutton class='btn btn-large btn-primary' data-loading-text="Downloading..." href='https://github.com/modmaker/BeBoPr/tarball/master' ><img alt='Download .tar.gz' title='Download .tar.gz' src=img/tar.png > Download</a>
-		  </div>
-        </div><!--/span-->
+		<!-- IFRAME WITH GITHUB WIKI CONTENT!!! -->
       </div><!--/row-->
       <hr style=height:2px; class='soften'>
       <footer>
         <p>&copy; AES Allround Embeded Services 2013 <span class=pull-right >Website made by <a target=_blank href=https://github.com/lesander >Sander Laarhoven</a>.</span></p>
       </footer>
     </div><!--/.fluid-container-->
-
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script src="javascripts/jquery-1.9.1.min.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function() {
-			$('#downloadbutton').button();
-
-			$('#downloadbutton').on('click', function () {
-				$(this).button('loading')
-			 }) 
-		});	
-		$(document).ready(function() {
-			$('#downloadbutton_2').button();
-
-			$('#downloadbutton_2').on('click', function () {
-				$(this).button('loading')
-			 }) 
-		});
-		</script>
+	<script src="../javascripts/jquery-1.9.1.min.js"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
 		<!-- Piwik -->
 		<script type="text/javascript"> 
 		  var _paq = _paq || [];
