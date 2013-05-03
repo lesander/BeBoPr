@@ -212,8 +212,12 @@
 	<script src="javascripts/jquery-1.9.1.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
 	<script>
-	$('#mainCarousel').carousel({
-    interval: 1200
+	$(document).ready(function () {
+		$('.carousel').carousel({
+			interval: 3000
+		});
+
+		$('.carousel').carousel('cycle');
 	});
 	</script>
 	<!-- Piwik -->
