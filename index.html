@@ -54,6 +54,13 @@
 	width: 780px;
 	margin-left: -390px; /* - width/2 */
 	    }
+	    
+	.x-carousel-indicator-dark span.x-carousel-indicator-active{
+	background-color: lighten(#5599FF,10);
+	}
+	.x-carousel-indicator-dark span{
+	background-color: green;
+	}
     </style>
 
     <!-- Fav and touch icons -->
@@ -185,10 +192,13 @@
 				<a class="carousel-control left" href="#mainCarousel" data-slide="prev">&lsaquo;</a>
 				<a class="carousel-control right" href="#mainCarousel" data-slide="next">&rsaquo;</a>
 				<center>
-				<ol class="carousel-indicators middle">
+				<ol class="x-carousel-indicator-dark carousel-indicators middle">
 					<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#mainCarousel" data-slide-to="1"></li>
 					<li data-target="#mainCarousel" data-slide-to="2"></li>
+					<li data-target="#mainCarousel" data-slide-to="3"></li>
+					<li data-target="#mainCarousel" data-slide-to="4"></li>
+					<li data-target="#mainCarousel" data-slide-to="5"></li>
 				</ol>
 				</center>
 			  </div>
