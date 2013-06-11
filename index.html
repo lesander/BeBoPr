@@ -37,11 +37,20 @@
           padding-right: 5px;
         }
       }
-      .x-carousel-indicator span {
-	  background-color: green !important;
-	  background-size: 11px;
-	  border-radius: none;
-      }
+	.carousel-indicators.middle {
+		/*color: black;*/
+		left: 0;
+		right: 0;
+		top: auto;
+		bottom: 15px;
+		text-align: center;
+	}
+		.carousel-indicators.middle li {
+			/*color: black;*/
+			float: none;
+			display: inline-block;
+	}
+	
 	.custom-height-modal {
 	width: 780px;
 	margin-left: -390px; /* - width/2 */
@@ -181,12 +190,12 @@
 				<a class="carousel-control right" href="#mainCarousel" data-slide="next">&rsaquo;</a>
 				<center>
 				<ol class="x-carousel-indicator-dark carousel-indicators middle">
-					<li data-target="#mainCarousel" data-slide-to="0" class="active x-carousel-indicator"></li>
-					<li data-target="#mainCarousel" data-slide-to="1" class="x-carousel-indicator"></li>
-					<li data-target="#mainCarousel" data-slide-to="2" class="x-carousel-indicator"></li>
-					<li data-target="#mainCarousel" data-slide-to="3" class="x-carousel-indicator"></li>
-					<li data-target="#mainCarousel" data-slide-to="4" class="x-carousel-indicator"></li>
-					<li data-target="#mainCarousel" data-slide-to="5" class="x-carousel-indicator"></li>
+					<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#mainCarousel" data-slide-to="1"></li>
+					<li data-target="#mainCarousel" data-slide-to="2"></li>
+					<li data-target="#mainCarousel" data-slide-to="3"></li>
+					<li data-target="#mainCarousel" data-slide-to="4"></li>
+					<li data-target="#mainCarousel" data-slide-to="5"></li>
 				</ol>
 				</center>
 			  </div>
