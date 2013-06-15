@@ -50,7 +50,20 @@
 			float: none;
 			display: inline-block;
 	}
-	
+	/* Changes the position of the indicators */
+	.carousel-indicators {
+		right: 50%;
+		top: auto;
+		bottom: 0px;
+		margin-right: -19px;
+	}
+	/* Changes the colour of the indicators */
+	.carousel-indicators li {
+		background: #c0c0c0;
+	}
+	.carousel-indicators .active {
+	background: #333333;
+	}
 	.custom-height-modal {
 	width: 780px;
 	margin-left: -390px; /* - width/2 */
@@ -185,11 +198,11 @@
 					  </div>
 					</div>
 				</div>
-				<!-- Carousel nav -->
+				<!-- Carousel navv -->
 				<a class="carousel-control left" href="#mainCarousel" data-slide="prev">&lsaquo;</a>
 				<a class="carousel-control right" href="#mainCarousel" data-slide="next">&rsaquo;</a>
 				<center>
-				<ol class="x-carousel-indicator-dark carousel-indicators middle">
+				<ol class="carousel-indicators middle">
 					<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#mainCarousel" data-slide-to="1"></li>
 					<li data-target="#mainCarousel" data-slide-to="2"></li>
